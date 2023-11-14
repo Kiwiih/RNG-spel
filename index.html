@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <h1>Guess the Number!</h1>
+          <!-- Starta om knapp -->
+        <button id="restart-btn">STARTA OM SPELET</button>
+        <!-- div för spelet -->
+        <div class="game-div" id="game-div">
+
+            <!-- Formulär för användarens input -->
+            <label for="guess">Guess A Number: </label>
+            <input type="number" name="guess" id="guess">
+            <!-- Knapp för att skicka in sin gissning -->
+            <button id="guess-btn">Guess!</button>
+            <h3 id="remaining-guesses">Antal gissningar (max 10):</h3>
+            <!-- fylls på med gissningar, slutar efter fem stycken -->
+            <ul id="guess-list">
+                
+            </ul>
+      
+
+        </div>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
