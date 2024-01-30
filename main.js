@@ -16,12 +16,6 @@ let attempts = 1;
 
 guessBtn.addEventListener('click', checkGuess);
 
-guessBtn.addEventListener('click', () => {
-    // Add your gtag event here
-    gtag('event', 'click', {
-        'event_category': 'RNG',
-        'event_label': 'RNG Button Clicked'
-    });});
 
     const userInput = document.getElementById('guess');
     
@@ -47,7 +41,10 @@ function checkGuess() {
              userInput.value = '';  // Clear the input field
              userInput.focus();     // Set focus back to the input field
              
-        }
+        }gtag('event', 'click', {
+        'event_category': 'RNG',
+        'event_label': 'RNG Button Clicked'
+    });
         attemptsCounter();  
 }
  
