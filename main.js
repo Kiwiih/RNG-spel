@@ -41,7 +41,7 @@ function checkGuess() {
              userInput.value = '';  // Clear the input field
              userInput.focus();     // Set focus back to the input field
              
-        }gtag('event', 'click', {
+        }gtag('event', 'button-click', {
         'event_category': 'RNG',
         'event_label': 'RNG Button Clicked'
     });
