@@ -16,6 +16,12 @@ let attempts = 1;
 
 guessBtn.addEventListener('click', checkGuess);
 
+guessBtn.addEventListener('click', () => {
+    // Add your gtag event here
+    gtag('event', 'click', {
+        'event_category': 'RNG',
+        'event_label': 'RNG Button Clicked'
+    });});
 
     const userInput = document.getElementById('guess');
     
